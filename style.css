@@ -31,8 +31,44 @@ button:hover {
     padding: 1em;
     border-radius: 10px;
     display: inline-block;
-    max-width: 400px;
+    max-width: 500px;
 }
+
+.hobby-card {
+  list-style: none;
+  background-color: #f5f0fa;
+  border: 1px solid #d8c6e8;
+  border-radius: 12px;
+  padding: 12px 20px;
+  margin: 0 auto 15px;
+  width: 90%;
+  max-width: 500px;
+}
+
+.hobby-card h3 {
+  margin-top: 0;
+  color: #59377a;
+}
+
+.hobby-card p {
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+#hobbyList {
+    padding: 0 15px;
+}
+
+
+.hobby-supplies {
+  font-size: 0.85rem;
+  color: #6b5575;
+  background-color: #ebe2f2;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-top: 10px;
+}
+
 
 footer {
     margin-top: 50px;

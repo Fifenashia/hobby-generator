@@ -64,7 +64,39 @@ button.addEventListener("click", function () {
 
   picks.forEach((hobby) => {
     const li = document.createElement("li");
-    li.textContent = hobby.name;
+    li.classList.add("hobby-card");
+
+    const title = document.createElement("h3");
+    title.textContent = hobby.name;
+
+    const description = document.createElement("p");
+    description.textContent = hobby.activity;
+
+    const details = document.createElement("p");
+
+    const timeLabels = {
+      quick: "Under 5 minutes",
+      short: "5–30 minutes",
+      medium: "30–60 minutes",
+      long: "Over an hour"
+};
+
+const displayTime = timeLabels[hobby.time];
+const displayCost = hobby.cost === 0 ? "Free" : `$${hobby.cost}`;
+
+details.textContent = `⏰ ${displayTime} | 💰 ${displayCost}`;
+
+const supplies = document.createElement("p");
+supplies.classList.add("hobby-supplies");
+supplies.textContent = `What you'll need: ${hobby.supplies.join(", ")}`;
+
+
+
+
+    li.appendChild(title);
+    li.appendChild(description);
+    li.appendChild(details);
+    li.appendChild(supplies);
     hobbyList.appendChild(li);
   });
 
