@@ -1,0 +1,59 @@
+[{
+    "id":1,
+    "name": "watercolor",
+    "activity": "Paint a simple shape, flower, or fruit using basic watercolor techniques",
+    "skillLevel": "beginner",
+    "cost": 15,
+    "time": "short",
+    "environment": ["indoors", "outdoors"],
+    "supplies": ["paintbrushes", "watercolor paint", "paper"],
+    "type": "creative",
+    "resources": [
+        {
+        "title": "9 Simple Watercolor Projects for Beginners",
+        "url": "https://jennarainey.com/simple-watercolor-projects-for-beginners/"
+        },
+        {
+        "title":"Watercolor Basics – A Quick Supply Guide for Beginners",
+        "url":"https://www.lilyandthistle.com/watercolor-basics-a-quick-supply-guide-for-beginners/"
+        }
+    ]
+},  
+
+{
+    "id":2,
+    "name": "knitting",
+    "activity": "Practice knit and purl stitches to begin making a simple washcloth",
+    "skillLevel": "beginner",
+    "cost": 15,
+    "time": "short",
+    "environment": ["indoors", "outdoors"],
+    "supplies": ["yarn", "knitting needles"],
+    "type": "creative",
+    "resources": [
+        {
+        "title": "How to Knit for Beginners",
+        "url": "https://www.thesprucecrafts.com/how-to-knit-for-beginners-2116090"
+        },
+        {
+        "title":"Knitting Basics: How to Knit a Washcloth",
+        "url":"https://www.thesprucecrafts.com/knitting-basics-how-to-knit-a-washcloth-2116091"
+        }
+    ]
+},
+
+{
+  "id": 3,
+  "name": "origami",
+  "activity": "Learn to fold a simple paper crane",
+  "skillLevel": "beginner",
+  "cost": 0,
+  "time": "quick",
+  "environment": ["indoors"],
+  "supplies": ["paper"],
+  "type": "creative",
+  "resources": [
+    
+  ]
+}
+]
