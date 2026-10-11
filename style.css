@@ -70,6 +70,28 @@ button:hover {
 }
 
 
+.start-steps {
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+.start-steps ol {
+  padding-left: 25px;
+  margin: 0;
+}
+
+.start-steps li {
+  margin-bottom: 8px;
+}
+
+.start-steps[hidden] {
+  display: none;
+}
+
+
 footer {
     margin-top: 50px;
 }

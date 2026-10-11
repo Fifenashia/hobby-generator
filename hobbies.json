@@ -74,9 +74,10 @@
   "cost": 0,
   "skillLevel": "beginner",
   "environment": "outdoor",
-  "activity": "Spend five minutes watching birds outside your window or in your yard. Try identifying one species.",
+  "activity ": "Spend five minutes watching birds outside your window or in your yard. Try identifying one species.",
   "supplies": ["A place to watch birds", "Optional: free bird identification app" ],
-  "resources": []
+  "resources": ["https://www.allaboutbirds.org/news/10-tips-for-birdwatching-beginners/"],
+  "gettingStarted": ["Find a comfortable spot where you can watch birds.", "Spend five minutes observing their colors and behavior.", "Try identifying one bird using a free identification guide."]
 },
 {
   "id": 6,

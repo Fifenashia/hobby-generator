@@ -90,18 +90,49 @@ const supplies = document.createElement("p");
 supplies.classList.add("hobby-supplies");
 supplies.textContent = `What you'll need: ${hobby.supplies.join(", ")}`;
 
+const startButton = document.createElement("button");
+startButton.textContent = "🌱 How do I start?";
+startButton.classList.add("start-button");
+
+const startSteps = document.createElement("div");
+startSteps.classList.add("start-steps");
+startSteps.hidden = true;
 
 
+const stepsList = document.createElement("ol");
 
-    li.appendChild(title);
-    li.appendChild(description);
-    li.appendChild(details);
-    li.appendChild(supplies);
-    hobbyList.appendChild(li);
+if (hobby.gettingStarted) {
+  hobby.gettingStarted.forEach((step) => {
+    const listItem = document.createElement("li");
+    listItem.textContent = step;
+    stepsList.appendChild(listItem);
   });
+}
+
+startSteps.appendChild(stepsList);
 
 
+startButton.addEventListener("click", function () {
+  startSteps.hidden = !startSteps.hidden;
+
+  startButton.textContent = startSteps.hidden
+    ? "🌱 How do I start?"
+    : "Hide instructions";
 });
+   
+li.appendChild(title);
+li.appendChild(description);
+li.appendChild(details);
+li.appendChild(supplies);
+
+if (hobby.gettingStarted && hobby.gettingStarted.length > 0) {
+  li.appendChild(startButton);
+  li.appendChild(startSteps);
+}
+
+hobbyList.appendChild(li);
+});
+}); 
 
 async function loadHobbies() {
   try {
