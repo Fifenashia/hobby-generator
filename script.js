@@ -32,7 +32,7 @@ button.addEventListener("click", function () {
     pool = allHobbies;
   } else {
     pool = allHobbies.filter(hobby => {
-      return hobby.type === chosenCategory.toLowerCase();
+      return hobby.categories.includes(chosenCategory.toLowerCase());
     });
   }
 
@@ -51,13 +51,13 @@ button.addEventListener("click", function () {
     pool = pool.filter((hobby) => {
       return hobby.cost <= maxBudget;
     });
+  }
 
   hobbyList.textContent = "";
 
   if (pool.length === 0) {
         hobbyList.innerHTML = "<li>No hobbies found.</li>";
     return;
-  }
 }
 
   const picks = pickThreeUnique(pool);
@@ -69,7 +69,6 @@ button.addEventListener("click", function () {
   });
 
 
-console.log("Filtered pool:", pool);
 });
 
 async function loadHobbies() {

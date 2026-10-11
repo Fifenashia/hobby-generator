@@ -1,13 +1,13 @@
 [{
     "id":1,
-    "name": "watercolor",
-    "activity": "Paint a simple shape, flower, or fruit using basic watercolor techniques",
-    "skillLevel": "beginner",
-    "cost": 15,
+    "name": "watercolor",    
+    "categories": ["creative"], 
     "time": "short",
+    "cost": 15,  
+    "skillLevel": "beginner",
     "environment": ["indoors", "outdoors"],
+    "activity": "Paint a simple shape, flower, or fruit using basic watercolor techniques",
     "supplies": ["paintbrushes", "watercolor paint", "paper"],
-    "type": "creative",
     "resources": [
         {
         "title": "9 Simple Watercolor Projects for Beginners",
@@ -19,17 +19,16 @@
         }
     ]
 },  
-
 {
     "id":2,
     "name": "knitting",
-    "activity": "Practice knit and purl stitches to begin making a simple washcloth",
-    "skillLevel": "beginner",
-    "cost": 15,
+    "categories": ["creative"],
     "time": "short",
+    "cost": 15,
+    "skillLevel": "beginner",
     "environment": ["indoors", "outdoors"],
+    "activity": "Practice knit and purl stitches to begin making a simple washcloth",
     "supplies": ["yarn", "knitting needles"],
-    "type": "creative",
     "resources": [
         {
         "title": "How to Knit for Beginners",
@@ -41,19 +40,92 @@
         }
     ]
 },
-
 {
   "id": 3,
   "name": "origami",
-  "activity": "Learn to fold a simple paper crane",
-  "skillLevel": "beginner",
-  "cost": 0,
+  "categories": ["creative"],
   "time": "quick",
+  "cost": 0,
+  "skillLevel": "beginner",
   "environment": ["indoors"],
+  "activity": "Learn to fold a simple paper crane",
   "supplies": ["paper"],
-  "type": "creative",
   "resources": [
-    
+
   ]
+},
+{
+  "id": 4,
+  "name": "Nature Journaling",
+  "categories": ["creative", "outdoors"],
+  "time": "short",
+  "cost": 0,
+  "skillLevel": "beginner",
+  "environment": "outdoor",
+  "activity": "Spend time observing nature and recording what you notice through sketches, notes, or collected observations.",
+  "supplies": ["Notebook", "Pencil"],
+  "resources": []
+},
+{
+  "id": 5,
+  "name": "Birdwatching",
+  "categories": ["outdoors"],
+  "time": "quick",
+  "cost": 0,
+  "skillLevel": "beginner",
+  "environment": "outdoor",
+  "activity": "Spend five minutes watching birds outside your window or in your yard. Try identifying one species.",
+  "supplies": ["A place to watch birds", "Optional: free bird identification app" ],
+  "resources": []
+},
+{
+  "id": 6,
+  "name": "Geocaching",
+  "categories": ["outdoors", "brainy"],
+  "time": "medium",
+  "cost": 0,
+  "skillLevel": "beginner",
+  "environment": "outdoor",
+  "activity": "Use a free geocaching app to find a beginner-friendly hidden cache near you.",
+  "supplies": ["Smartphone", "Free geocaching app"],
+  "resources": []
+},
+{
+  "id": 7,
+  "name": "Creative Writing",
+  "categories": ["creative", "cozy"],
+  "time": "short",
+  "cost": 0,
+  "skillLevel": "beginner",
+  "environment": "indoor",
+  "activity": "Write a short scene inspired by a random photograph or writing prompt.",
+  "supplies": ["Notebook or digital writing app"],
+  "resources": []
+},
+{
+  "id": 8,
+  "name": "Friendship Bracelets",
+  "categories": ["creative", "cozy", "social"],
+  "time": "short",
+  "cost": 5,
+  "skillLevel": "beginner",
+  "environment": "indoor",
+  "activity": "Learn a basic knot pattern and make a colorful bracelet for yourself or a friend.",
+  "supplies": ["Embroidery floss", "Scissors", "Tape"],
+  "resources": []
+},
+{
+  "id": 9,
+  "name": "Sudoku",
+  "categories": ["brainy", "cozy"],
+  "time": "quick",
+  "cost": 0,
+  "skillLevel": "beginner",
+  "environment": "indoor",
+  "activity": "Complete an easy Sudoku puzzle using a free app or printable puzzle.",
+  "supplies": ["Free Sudoku app or puzzle"],
+  "resources": []
 }
+
+
 ]
